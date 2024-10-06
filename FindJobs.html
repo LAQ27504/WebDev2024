@@ -17,8 +17,7 @@
                 <ul>
                     <li><a href="HomePage.html">Home</a></li>
                     <li><a href="FindJobs.html">Find Jobs</a></li>
-                    <li><a href="#">Post a Job</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
                     <li><a href="#">Sign in</a></li>
                 </ul>
             </nav>
@@ -30,14 +29,22 @@
     <section class="banner">
     </section>
 
-   <!-- Main Section with Search Form -->
    <main>
+
+    <!-- Search Section -->
     <section class="search-section">
         <div class="container">
-            <h2>Find Your Dream Job</h2>
-            <form action="" method="GET">
-                <input type="text" name="keyword" placeholder="Job title, keywords" required>
-                <input type="text" name="location" placeholder="Location" required>
+            <form class="search-form" action="" method="GET">
+                <input type="text" name="keyword" placeholder="Enter job title, keywords" required>
+                
+                <select name="location" required>
+                    <option value="">Select Location</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                    <option value="CN">China</option>
+                </select>
+
                 <select name="category" required>
                     <option value="">Select Category</option>
                     <option value="IT">IT & Software</option>
@@ -45,10 +52,12 @@
                     <option value="Marketing">Marketing</option>
                     <option value="Healthcare">Healthcare</option>
                 </select>
-                <button type="submit">Search Jobs</button>
+
+                <button type="submit" class="search-button">Search Jobs</button>
             </form>
         </div>
     </section>
+
 
     <!-- Featured Jobs Section -->
     <section class="featured-jobs">
@@ -63,12 +72,21 @@
                         <h3>Senior UX Designer</h3>
                         <span class="job-type contract">Contract Base</span>
                     </div>
-                    <button class="apply-button">Apply Now</button>
+                    <a href="DetailedJob.html" class="apply-button">Apply Now</a>
                 </div>
                 <div class="job-details">
-                    <p><span class="location-icon"></span> Australia</p>
-                    <p><span class="salary-icon"></span> $30K-$35K</p>
-                    <p><span class="time-icon"></span> 4 Days Remaining</p>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/location.png" alt="Location Icon" class="icon">
+                        <span>Australia</span>
+                    </div>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/dollar.png" alt="Dollar Icon" class="icon">
+                        <span>50k-80k</span>
+                    </div>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/calendar.png" alt="Calendar Icon" class="icon">
+                        <span>4 days remaining</span>
+                    </div>
                 </div>
             </div>
 
@@ -80,12 +98,21 @@
                         <h3>Software Engineer</h3>
                         <span class="job-type full-time">Full Time</span>
                     </div>
-                    <button class="apply-button">Apply Now</button>
+                    <a href="DetailedJob.html" class="apply-button">Apply Now</a>
                 </div>
                 <div class="job-details">
-                    <p><span class="location-icon"></span> China</p>
-                    <p><span class="salary-icon"></span> $50K-$60K</p>
-                    <p><span class="time-icon"></span> 4 Days Remaining</p>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/location.png" alt="Location Icon" class="icon">
+                        <span>China</span>
+                    </div>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/dollar.png" alt="Dollar Icon" class="icon">
+                        <span>50k-60k</span>
+                    </div>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/calendar.png" alt="Calendar Icon" class="icon">
+                        <span>4 days remaining</span>
+                    </div>
                 </div>
             </div>
 
@@ -97,12 +124,21 @@
                         <h3>Junior Graphic Designer</h3>
                         <span class="job-type full-time">Full Time</span>
                     </div>
-                    <button class="apply-button">Apply Now</button>
+                    <a href="DetailedJob.html" class="apply-button">Apply Now</a>
                 </div>
                 <div class="job-details">
-                    <p><span class="location-icon"></span> Canada</p>
-                    <p><span class="salary-icon"></span> $50K-$70</p>
-                    <p><span class="time-icon"></span> 4 Days Remaining</p>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/location.png" alt="Location Icon" class="icon">
+                        <span>Canada</span>
+                    </div>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/dollar.png" alt="Dollar Icon" class="icon">
+                        <span>50k-70k</span>
+                    </div>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/calendar.png" alt="Calendar Icon" class="icon">
+                        <span>4 days remaining</span>
+                    </div>
                 </div>
             </div>
 
@@ -114,12 +150,21 @@
                         <h3>Marketing Officer</h3>
                         <span class="job-type full-time">Internship</span>
                     </div>
-                    <button class="apply-button">Apply Now</button>
+                    <a href="DetailedJob.html" class="apply-button">Apply Now</a>
                 </div>
                 <div class="job-details">
-                    <p><span class="location-icon"></span> Germany</p>
-                    <p><span class="salary-icon"></span> $50K-$90K</p>
-                    <p><span class="time-icon"></span> 4 Days Remaining</p>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/location.png" alt="Location Icon" class="icon">
+                        <span>Germany</span>
+                    </div>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/dollar.png" alt="Dollar Icon" class="icon">
+                        <span>50k-90k</span>
+                    </div>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/calendar.png" alt="Calendar Icon" class="icon">
+                        <span>4 days remaining</span>
+                    </div>
                 </div>
             </div>
 
@@ -131,15 +176,23 @@
                         <h3>Interaction Designer</h3>
                         <span class="job-type full-time">Full Time</span>
                     </div>
-                    <button class="apply-button">Apply Now</button>
+                    <a href="DetailedJob.html" class="apply-button">Apply Now</a>
                 </div>
                 <div class="job-details">
-                    <p><span class="location-icon"></span> France</p>
-                    <p><span class="salary-icon"></span> $5K-$15K</p>
-                    <p><span class="time-icon"></span> 4 Days Remaining</p>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/location.png" alt="Location Icon" class="icon">
+                        <span>France</span>
+                    </div>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/dollar.png" alt="Dollar Icon" class="icon">
+                        <span>5k-15k</span>
+                    </div>
+                    <div class="overview-item">
+                        <img src="images/jobDetailedRelatedIcon/calendar.png" alt="Calendar Icon" class="icon">
+                        <span>4 days remaining</span>
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
 
