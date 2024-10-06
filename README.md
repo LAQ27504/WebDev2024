@@ -10,8 +10,8 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *Lê Anh Quang*
-* ID: *22BI13380*
+* Name: Tran Bao Nguyen
+* ID: *22BI13342*
 * Group ID: *7*
 * Project Name: *Job Search Portal*
 
