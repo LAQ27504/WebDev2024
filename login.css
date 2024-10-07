@@ -120,7 +120,7 @@ body {
 
 .info-container {
     flex-basis: 60%;
-    background-image: url(../img/Image.png);
+    background-image: url(images/signup/Image.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -133,18 +133,20 @@ body {
     padding: 40px;
     border-radius: 10px;
     padding-top: 40%; 
+    margin-top: 110px;
 }
 
 .info-content h3 {
     font-size: 300%;
     margin-bottom: 20px;
+    margin-left: 100px;
     text-align: left;
 }
 
 .stats {
     display: flex;
     justify-content: space-around;
-    padding-top: 80px;
+    padding-top: 30px;
     flex :1;
 }
 
@@ -162,21 +164,21 @@ body {
 
 
 .stat img.icon {
-    background-color: #ffffff24;
-    padding: 20px;
+    padding: 0;
     margin-right: 15px;
-    border-radius: 8px; 
+    width: 80px;
+    height: 80px;
 }
 
 .stat p {
-    font-size: 16px;
+    font-size: 1em;
     margin: 5px 0 0 0 ;
     color : whitesmoke;
     font-weight: 100;
 }
 
 .stat h3 {
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
     font-weight: 100;
 }
