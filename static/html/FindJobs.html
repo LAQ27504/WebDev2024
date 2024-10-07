@@ -37,14 +37,20 @@
         </nav>
     </section>
 
-    <!-- Main Section with Search Form -->
-    <main>
+    <!-- Search Section -->
     <section class="search-section">
         <div class="container">
-            <h2>Find Your Dream Job</h2>
-            <form action="" method="GET">
-                <input type="text" name="keyword" placeholder="Job title, keywords" required>
-                <input type="text" name="location" placeholder="Location" required>
+            <form class="search-form" action="" method="GET">
+                <input type="text" name="keyword" placeholder="Enter job title, keywords" required>
+                
+                <select name="location" required>
+                    <option value="">Select Location</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                    <option value="CN">China</option>
+                </select>
+
                 <select name="category" required>
                     <option value="">Select Category</option>
                     <option value="IT">IT & Software</option>
@@ -52,7 +58,8 @@
                     <option value="Marketing">Marketing</option>
                     <option value="Healthcare">Healthcare</option>
                 </select>
-                <button type="submit">Search Jobs</button>
+
+                <button type="submit" class="search-button">Search Jobs</button>
             </form>
         </div>
     </section>
