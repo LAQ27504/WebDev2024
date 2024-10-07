@@ -54,7 +54,7 @@ nav ul li a:hover {
 
 /*Intro*/
 .intro {
-    background: url('images/banner/job_blurbg.png');
+    background: url('../../images/banner/job_blurbg.png');
     background-size: cover;
     background-position: center;
     width: 100%;
