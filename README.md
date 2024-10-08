@@ -9,8 +9,8 @@ Students are expected to:
 
 Student Info
 =======================
-* Name: Vu Ha Vy
-* ID: 22BI13485
+* Name: Hồ Thanh Thủy Tiên
+* ID: 22BI13419
 * Group ID: 7
 * Project Name: Job Search Portal
 
