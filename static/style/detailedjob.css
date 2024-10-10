@@ -436,3 +436,14 @@ h3 {
 .related-nav-button:hover {
     background-color: #785878;
 }
+.company-header {
+    display: flex;
+    align-items: center; 
+}
+
+.job-company-logo {
+    margin-right: 20px; 
+    width: 60px; 
+    height: auto; 
+    padding-bottom: 15px;
+}
