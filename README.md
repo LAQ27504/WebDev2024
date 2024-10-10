@@ -9,12 +9,10 @@ Students are expected to:
 
 Student Info
 =======================
-
 * Name: Tran Bao Nguyen
 * ID: *22BI13342*
 * Group ID: *7*
 * Project Name: *Job Search Portal*
-test
 
 Group Rule
 =======================
