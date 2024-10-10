@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Portal</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/detailedjob.css">
+    <link rel="stylesheet" href="../style/homepage.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">WebPro</h1>
+            <nav>
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="FindJobs.html">Find Jobs</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="SignUp.html">Sign in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- detail -->
+    <section id="job-detail-section">
+        <div class="container">
+            <div id="job-description">
+                <!-- Job details will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Related Jobs -->
+    <div class="related-jobs-section">
+        <h2>Related Jobs</h2>
+        <div class="related-navigation">
+            <button class="related-nav-button">←</button>
+            <button class="related-nav-button">→</button>
+        </div>
+        <div class="jobs-card-container">
+            <div class="related-job-card">
+                <div class="related-job-header">
+                    <img src="../../images/company/google.png" alt="Google">
+                    <h3>Visual Designer</h3>
+                    <span class="related-badge">Featured</span>
+                </div>
+                <div class="related-job-location">
+                    <img src="../../images/jobDetailedRelatedIcon/location.png" alt="Location Icon"> China
+                </div>
+                <div class="related-job-salary">$10K - $15K</div>
+            </div>
+            <div class="related-job-card">
+                <div class="related-job-header">
+                    <img src="../../images/company/figma.png" alt="Figma">
+                    <h3>Front End Developer</h3>
+                </div>
+                <div class="related-job-location">
+                    <img src="../../images/jobDetailedRelatedIcon/location.png" alt="Location Icon"> Australia
+                </div>
+                <div class="related-job-salary">$50K - $80K</div>
+            </div>
+            <div class="related-job-card">
+                <div class="related-job-header">
+                    <img src="../../images/company/up.png" alt="Upwork">
+                    <h3>Technical Support Specialist</h3>
+                </div>
+                <div class="related-job-location">
+                    <img src="../../images/jobDetailedRelatedIcon/location.png" alt="Location Icon"> France
+                </div>
+                <div class="related-job-salary">$35K - $40K</div>
+            </div>
+            <div class="related-job-card">
+                <div class="related-job-header">
+                    <img src="../../images/company/facebook.png" alt="Facebook">
+                    <h3>Software Engineer</h3>
+                </div>
+                <div class="related-job-location">
+                    <img src="../../images/jobDetailedRelatedIcon/location.png" alt="Location Icon"> United Kingdom
+                </div>
+                <div class="related-job-salary">$15K - $20K</div>
+            </div>
+            <div class="related-job-card">
+                <div class="related-job-header">
+                    <img src="../../images/company/microsoft.png" alt="Microsoft">
+                    <h3>Product Designer</h3>
+                </div>
+                <div class="related-job-location">
+                    <img src="../../images/jobDetailedRelatedIcon/location.png" alt="Location Icon"> Australia
+                </div>
+                <div class="related-job-salary">$40K - $50K</div>
+            </div>
+            <div class="related-job-card">
+                <div class="related-job-header">
+                    <img src="../../images/company/youtube.png" alt="YouTube">
+                    <h3>Interaction Designer</h3>
+                </div>
+                <div class="related-job-location">
+                    <img src="../../images/jobDetailedRelatedIcon/location.png" alt="Location Icon"> Germany
+                </div>
+                <div class="related-job-salary">$20K - $25K</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="applyPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 class="popup-title">Apply Job: Senior UX Designer</h2>
+
+            <label for="resume">Choose Resume:</label>
+            <select id="resume">
+                <option value="">Select...</option>
+                <option value="computer">Upload from Computer</option>
+                <option value="website">Link from Website</option>
+            </select>
+
+            <label for="coverLetter">Cover Letter:</label>
+            <textarea id="coverLetter" placeholder="Write down your biography here..."></textarea>
+            <button id="submitBtn">Apply Now</button>
+        </div>
+    </div>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WebPro - Group 7. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../../source/job-details.js" ></script>
+</main>
+</body>
+</html>

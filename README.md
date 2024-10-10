@@ -9,7 +9,6 @@ Students are expected to:
 
 Student Info
 =======================
-
 * Name: Tran Bao Nguyen
 * ID: *22BI13342*
 * Group ID: *7*
