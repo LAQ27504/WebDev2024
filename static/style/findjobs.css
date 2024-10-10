@@ -10,6 +10,7 @@
     position: relative;
 }
 
+
 .findjob-container {
     display: flex; 
     align-items: center;
@@ -199,4 +200,41 @@
 .time-icon:before {
     content: "⏳";
     margin-right: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination button.active {
+    background-color: #d8c5e2;
+    color: white;
+}
+
+.pagination button:hover {
+    background-color: #d8c5e2;
+    color: white;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }

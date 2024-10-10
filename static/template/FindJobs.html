@@ -40,23 +40,17 @@
     <!-- Search Section -->
     <section class="search-section">
         <div class="container">
-            <form class="search-form" action="" method="GET">
-                <input type="text" name="keyword" placeholder="Enter job title, keywords" required>
-                
-                <select name="location" required>
-                    <option value="">Select Location</option>
-                    <option value="US">United States</option>
-                    <option value="CA">Canada</option>
-                    <option value="AU">Australia</option>
-                    <option value="CN">China</option>
-                </select>
+            <form id="job-filter-form" class="search-form" action="" method="GET">
+                <input id="keyword" type="text" name="keyword" placeholder="Enter job title, keywords" >
+                <input id="location" type="text" name="location" placeholder="Enter Location" >
 
-                <select name="category" required>
+                <select id="category" name="category" >
                     <option value="">Select Category</option>
-                    <option value="IT">IT & Software</option>
+                    <option value="IT & Software">IT & Software</option>
                     <option value="Finance">Finance</option>
                     <option value="Marketing">Marketing</option>
                     <option value="Healthcare">Healthcare</option>
+                    <option value="Design">Design</option>
                 </select>
 
                 <button type="submit" class="search-button">Search Jobs</button>
@@ -67,94 +61,16 @@
     <!-- Featured Jobs Section -->
     <section class="featured-jobs">
         <div class="container">
-            <h2>Featured Jobs</h2>
-            
-            <!-- Job Listing 1 -->
-            <div class="job-listing">
-                <div class="job-header">
-                    <img src="../../images/company/up.png" alt="Up Logo" class="company-logo">
-                    <div class="job-title-container">
-                        <h3>Senior UX Designer</h3>
-                        <span class="job-type contract">Contract Base</span>
-                    </div>
-                    <a href="DetailedJob.html" class="apply-button">Apply Now</a>
-                </div>
-                <div class="job-details">
-                    <p><span class="location-icon"></span> Australia</p>
-                    <p><span class="salary-icon"></span> $30K-$35K</p>
-                    <p><span class="time-icon"></span> 4 Days Remaining</p>
-                </div>
-            </div>
+        <h2>Featured Jobs</h2>
+        <ul id="job-listings"></ul> 
 
-            <!-- Job Listing 2 -->
-            <div class="job-listing">
-                <div class="job-header">
-                    <img src="../../images/company/apple.png" alt="Apple Logo" class="company-logo">
-                    <div class="job-title-container">
-                        <h3>Software Engineer</h3>
-                        <span class="job-type full-time">Full Time</span>
-                    </div>
-                    <a href="DetailedJob.html" class="apply-button">Apply Now</a>
-                </div>
-                <div class="job-details">
-                    <p><span class="location-icon"></span> China</p>
-                    <p><span class="salary-icon"></span> $50K-$60K</p>
-                    <p><span class="time-icon"></span> 4 Days Remaining</p>
-                </div>
-            </div>
-
-            <!-- Job Listing 3 -->
-            <div class="job-listing">
-                <div class="job-header">
-                    <img src="../../images/company/figma.png" alt="Figma Logo" class="company-logo">
-                    <div class="job-title-container">
-                        <h3>Junior Graphic Designer</h3>
-                        <span class="job-type full-time">Full Time</span>
-                    </div>
-                    <a href="DetailedJob.html" class="apply-button">Apply Now</a>
-                </div>
-                <div class="job-details">
-                    <p><span class="location-icon"></span> Canada</p>
-                    <p><span class="salary-icon"></span> $50K-$70</p>
-                    <p><span class="time-icon"></span> 4 Days Remaining</p>
-                </div>
-            </div>
-
-            <!-- Job Listing 4 -->
-            <div class="job-listing">
-                <div class="job-header">
-                    <img src="../../images/company/facebook.png" alt="Google Logo" class="company-logo">
-                    <div class="job-title-container">
-                        <h3>Marketing Officer</h3>
-                        <span class="job-type full-time">Internship</span>
-                    </div>
-                    <a href="DetailedJob.html" class="apply-button">Apply Now</a>
-                </div>
-                <div class="job-details">
-                    <p><span class="location-icon"></span> Germany</p>
-                    <p><span class="salary-icon"></span> $50K-$90K</p>
-                    <p><span class="time-icon"></span> 4 Days Remaining</p>
-                </div>
-            </div>
-
-            <!-- Job Listing 5 -->
-            <div class="job-listing">
-                <div class="job-header">
-                    <img src="../../images/company/google.png" alt="Apple Logo" class="company-logo">
-                    <div class="job-title-container">
-                        <h3>Interaction Designer</h3>
-                        <span class="job-type full-time">Full Time</span>
-                    </div>
-                    <a href="DetailedJob.html" class="apply-button">Apply Now</a>
-                </div>
-                <div class="job-details">
-                    <p><span class="location-icon"></span> France</p>
-                    <p><span class="salary-icon"></span> $5K-$15K</p>
-                    <p><span class="time-icon"></span> 4 Days Remaining</p>
-                </div>
-            </div>
-
+        <!-- Pagination Controls -->
+        <div id="pagination-controls" class="pagination">
         </div>
+        
+    </div>
+
+        <script src="../../source/job-list.js"></script>
     </section>
 
 
@@ -170,6 +86,8 @@
         </div>
     </footer>
 </main>
+
+  
 
 </body>
 </html>
