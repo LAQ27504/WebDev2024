@@ -9,10 +9,10 @@ Students are expected to:
 
 Student Info
 =======================
-* Name: Hồ Thanh Thủy Tiên
-* ID: 22BI13419
-* Group ID: 7
-* Project Name: Job Search Portal
+* Name: Tran Bao Nguyen
+* ID: *22BI13342*
+* Group ID: *7*
+* Project Name: *Job Search Portal*
 
 Group Rule
 =======================
