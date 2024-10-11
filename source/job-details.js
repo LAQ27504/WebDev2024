@@ -159,8 +159,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             
                                     <!-- Company Info Box -->
                                     <div class="company-info-box">
-                                        <img class = "job-company-logo" src="../../${job.logo}" >
-                                        <h3> ${job.company}</h3>
+                                        <div class="company-header">
+                                            <img class="job-company-logo" src="../../${job.logo}" alt="Company Logo">
+                                            <h3>${job.company}</h3>
+                                        </div>
                                         <div class="company-info-details">
                                             <p><strong>Found in:</strong> ${job.founded}</p>
                                             <p><strong>Organization type:</strong> ${job.organizationType}</p>
