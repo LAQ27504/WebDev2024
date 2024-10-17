@@ -30,10 +30,8 @@
 /*intro stats*/
 .stats {
     display: flex;
-    justify-content: left;
-    margin-left: 80px;
-    flex-wrap: wrap;
-    gap: 40px; 
+    justify-content: space-between;
+    padding: 0 30px;
 }
 
 .stat {
@@ -42,7 +40,8 @@
     justify-content: flex-start; 
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    width: 300px; 
+    flex:1;
+    margin: 10px;
     height: 100px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     text-align: left; 
@@ -65,6 +64,26 @@
     display: block;
     font-size: 14px;
     color: #666;
+}
+
+@media (min-width: 992px) { /* Adjust breakpoint as needed */
+    .stats {
+        flex-wrap: nowrap; /* Keep boxes on the same line for large screens */
+    }
+
+    .stat {
+        width: 300px; /* Adjust width for large screens */
+    }
+}
+
+@media (max-width: 991px) { /* Adjust breakpoint as needed */
+    .stats {
+        flex-wrap: wrap; /* Allow boxes to wrap to multiple lines for small screens */
+    }
+
+    .stat {
+        width: 45%; /* Adjust width for small screens */
+    }
 }
 
 /*Vacancies*/
@@ -121,6 +140,7 @@
 .step {
     max-width: 220px;
     text-align: center;
+    transition: transform 0.3s;
 }
 
 .step img {
@@ -142,12 +162,30 @@
     width: 400px; 
     height: 30px;
     margin: 0 20px;
+    transition: filter 0.3s;
 }
 
 .arrow.flip {
     margin-top: 50px; 
 }
 
+.icon {
+    transition: transform 0.3s;
+    border-radius: 50%;
+}
+
+.step:hover .icon {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 1px #6721ff; /* Creates a rounded border around the icon */
+}
+
+.arrow:hover {
+    filter: drop-shadow(0 0 2px #6721ff);
+}
+
+.arrow-flip:hover {
+    filter: drop-shadow(0 0 2px #6721ff);
+}
 /* Review Section */
 .review {
     display: flex;
@@ -293,4 +331,47 @@
 
 .register-option .btn:hover {
     background-color: #d1c4e9; 
+    transform: scale(0.99);
 }
+
+
+@keyframes floatInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation classes */
+.float-in-left.active {
+    animation: floatInLeft 1s ease-out forwards;
+}
+
+.float-in-right.active {
+    animation: floatInRight 1s ease-out forwards;
+}
+
+/* Hide the elements initially */
+.review-container .float-in {
+    opacity: 0;
+}
+
+.nav-button:hover {
+    transform: scale(1.2);
+}
+

@@ -31,15 +31,14 @@ header .container {
     font-weight: bold;
 }
 
+/*Navbar*/
 nav ul {
     list-style: none;
-    padding-top: 15px;
 }
 
 nav ul li {
     display: inline;
     margin-left: 20px;
-
 }
 
 nav ul li a {
@@ -51,6 +50,55 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6); 
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 10px; 
+    border: none;
+}
+
+.navbar-nav .nav-link::before {
+content: '';
+position: absolute;
+width: 0; 
+height: 2px; 
+background: #fff; 
+bottom: 0; 
+left: 50%;
+transform: translateX(-50%);
+z-index: 2;
+transition: width 0.5s ease; 
+}
+    
+.navbar-nav .nav-link:hover::before {
+width: 100%; 
+}
+
+#home_page .navbar-nav .nav-link[href="HomePage.html"]::before {
+    width:100%;
+}
+
+#find_jobs .navbar-nav .nav-link[href="FindJobs.html"]::before {
+    width:100%;
+}
+
+#about_us .navbar-nav .nav-link[href="AboutUs.html"]::before {
+    width:100%;
+}
+
+
   
 /* Footer Styling */
 footer {

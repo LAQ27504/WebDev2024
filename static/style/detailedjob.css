@@ -134,6 +134,7 @@
 
 .apply-now-btn:hover {
     background-color: #5c3f6e;
+    transform: scale(0.99);
 }
 
 /* Modal Styles */
@@ -230,6 +231,7 @@ textarea {
 
 #submitBtn:hover {
     background-color: #59346a;
+    transform: scale(0.99);
 }
 
 /* Expiry Date */
@@ -330,6 +332,10 @@ h3 {
 .social-icons img {
     width: 50px;
     height: 50px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
 }
 
 /*Related Jobs*/
@@ -436,3 +442,73 @@ h3 {
 .related-nav-button:hover {
     background-color: #785878;
 }
+.company-header {
+    display: flex;
+    align-items: center; 
+}
+
+.job-company-logo {
+    margin-right: 20px; 
+    width: 60px; 
+    height: auto; 
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .job-layout {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+        padding: 10px;
+    }
+
+    .job-card {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .job-card-wrapper {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .job-company-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .job-title {
+        font-size: 1.2em; /* Adjust font size */
+    }
+
+    .apply-now-btn {
+        font-size: 16px; /* Smaller button size */
+        padding: 8px 15px;
+        margin-top: 10px;
+    }
+
+    .job-expiry {
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+
+    .left-column {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .job-overview-box, .company-info-box {
+        width: 100%;
+    }
+
+    .related-jobs-section {
+        margin-left: 0; /* Remove left margin for related jobs section */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .jobs-card-container {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+}
+
+
+
