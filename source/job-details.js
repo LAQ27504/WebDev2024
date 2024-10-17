@@ -183,6 +183,23 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </div>
                             </div>
                     `;
+                    document.getElementById('applyPopup').innerHTML = `
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <h2 class="popup-title">Apply Job: ${job.title}</h2>
+
+                        <label for="resume">Choose Resume:</label>
+                        <select id="resume">
+                            <option value="">Select...</option>
+                            <option value="computer">Upload from Computer</option>
+                            <option value="website">Link from Website</option>
+                        </select>
+
+                        <label for="coverLetter">Cover Letter:</label>
+                        <textarea id="coverLetter" placeholder="Write down your biography here..."></textarea>
+                        <button id="submitBtn">Apply Now</button>
+                    </div>
+                    `;
                     setApplyBtnListener();
                 } else {
                     document.getElementById('job-title').innerText = 'Job not found';
