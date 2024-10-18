@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Reapply search filters
-        const keyword = keywordInput.value.toLowerCase();
-        const location = locationInput.value.toLowerCase();
+        const keyword = keywordInput.value.toLowerCase().trim();
+        const location = locationInput.value.toLowerCase().trim();
         const category = categoryInput.value;
 
         // Apply search filters

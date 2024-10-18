@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
             while (haveId.indexOf(randomID) !== -1){
                 randomID = Math.floor((Math.random() * 29) + 1)
             }
+            haveId.push(randomID)
             let recommendedJob = data.find(job => job.id == randomID)
+            console.log(recommendedJob.id)
             jobRecommendList.push(recommendedJob)
         }
         return jobRecommendList
@@ -54,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             let jobData = data
             let jobRecommendList = getRandomJobIDs(jobData)
-
+            
             displayRecommendedJob(jobRecommendList)
         })
         .catch(error => {
