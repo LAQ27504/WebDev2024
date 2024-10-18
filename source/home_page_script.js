@@ -39,7 +39,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             const stepValue = parseInt(numberElement.getAttribute('data-step')) || 1;   // Read step value, default to 1
 
             animateNumber(numberElement, startNumber, targetNumber, 1000, stepValue); // Set duration to 2000ms (2 seconds)
-            observer.unobserve(entry.target); // Stop observing once animation starts
+            //observer.unobserve(entry.target); // Stop observing once animation starts
         }
     });
 }, observerOptions);

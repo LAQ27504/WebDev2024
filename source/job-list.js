@@ -40,19 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to filter jobs based on the active tab
     function applyTabFiltering(tab) {
-        // Filter jobs based on the active tab
-        filteredJobs = allJobs.filter(job => {
-            if (tab === 'all') return true;
-            return job.category === tab.replace('_', ' '); // Tab names must match job categories
-        });
-
         // Reapply search filters
         const keyword = keywordInput.value.toLowerCase().trim();
         const location = locationInput.value.toLowerCase().trim();
         const category = categoryInput.value;
 
         // Apply search filters
-        filteredJobs = filteredJobs.filter(job => {
+        filteredJobs = allJobs.filter(job => {
             let matches = true;
             if (keyword && !job.title.toLowerCase().includes(keyword)) matches = false;
             if (location && !job.country.toLowerCase().includes(location)) matches = false;

@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             haveId.push(randomID)
             let recommendedJob = data.find(job => job.id == randomID)
-            console.log(recommendedJob.id)
             jobRecommendList.push(recommendedJob)
         }
         return jobRecommendList
