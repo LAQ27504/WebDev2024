@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     popup.style.display = "none"; 
                 }, 300);
             }
+        }
     }
-}
     const jobId = getQueryParam('jobId');
 
     if (jobId !== null) {
@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 const job = data.find(job => job.id == jobId); // Find job by ID
 
                 if (job) {
-
                     document.getElementById('job-description').innerHTML = `
                             <!-- Job Card Section -->
                             <div class="job-card">
@@ -201,8 +200,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     `;
                     setApplyBtnListener();
+
                 } else {
-                    document.getElementById('job-title').innerText = 'Job not found';
+                    document.getElementById('job-title').innerText = `Job not found`;
                 }
             })
             .catch(error => {
@@ -210,6 +210,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('job-title').innerText = 'Error loading job details';
             });
     } else {
-        document.getElementById('job-title').innerText = 'No job selected';
+        document.getElementById('job-title').innerText = `No job selected`;
     }
 });
